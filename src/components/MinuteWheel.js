@@ -180,7 +180,7 @@ function MinuteWheel({ height, value, setValue }) {
 
    return (
       <div
-         className="react-ios-time-picker-minute"
+         className="ios-timepicker-react-minute"
          onMouseDown={handleMouseDown}
          onMouseUp={handleMouseUp}
          onMouseMove={handleMouseMove}
@@ -194,8 +194,8 @@ function MinuteWheel({ height, value, setValue }) {
          {/* <PickerEffects height={height} /> */}
          <div
             ref={mainListRef}
-            className={`${isFastCondition === true && 'react-ios-time-picker-fast'} ${
-               isSlowCondition === true && 'react-ios-time-picker-slow'
+            className={`${isFastCondition === true && 'ios-timepicker-react-fast'} ${
+               isSlowCondition === true && 'ios-timepicker-react-slow'
             }`}
             onTransitionEnd={handleTransitionEnd}
             style={{ transform: `translateY(${currentTranslatedValue}px)` }}
@@ -203,12 +203,12 @@ function MinuteWheel({ height, value, setValue }) {
             {hours.map((hourObj, index) => (
                <div
                   key={index}
-                  className="react-ios-time-picker-cell-minute"
+                  className="ios-timepicker-react-cell-minute"
                   style={{ height: `${height}px` }}
                >
                   <div
-                     className={`react-ios-time-picker-cell-inner-minute${
-                        hourObj.selected ? ' react-ios-time-picker-cell-inner-selected' : ''
+                     className={`ios-timepicker-react-cell-inner-minute${
+                        hourObj.selected ? ' ios-timepicker-react-cell-inner-selected' : ''
                      }`}
                      onClick={handleClickToSelect}
                      data-translated-value={hourObj.translatedValue}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Portal } from 'react-portal';
 import TimePickerSelection from './TimePickerSelection';
-import '../styles/react-ios-time-picker.css';
+import '../styles/ios-timepicker-react.css';
 
 function TimePicker({
    value: initialValue = null,
@@ -67,11 +67,11 @@ function TimePicker({
 
    return (
       <>
-         <div className="react-ios-time-picker-main" onClick={handleClick}>
+         <div className="ios-timepicker-react-main" onClick={handleClick}>
             <input
                id={id}
                name={name}
-               className={`react-ios-time-picker-input ${inputClassName || ''}`}
+               className={`ios-timepicker-react-input ${inputClassName || ''}`}
                value={inputValue === null ? '' : inputValue}
                type="text"
                placeholder={placeHolder}
@@ -83,9 +83,9 @@ function TimePicker({
          </div>
          {isOpen && !disabled && (
             <Portal>
-               <div className="react-ios-time-picker-popup">
+               <div className="ios-timepicker-react-popup">
                   <div
-                     className={`react-ios-time-picker-popup-overlay ${popupClassName || ''}`}
+                     className={`ios-timepicker-react-popup-overlay ${popupClassName || ''}`}
                      onClick={() => setIsOpen(!isOpen)}
                   />
                   <TimePickerSelection {...params} />

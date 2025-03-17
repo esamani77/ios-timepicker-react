@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TimePicker } from 'react-ios-time-picker';
+import { TimePicker } from 'ios-timepicker-react';
 
 function App() {
    const [value, setValue] = useState('10:00');

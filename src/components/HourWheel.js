@@ -201,8 +201,8 @@ function HourWheel({ height, value, setValue, use12Hours }) {
 
    return (
       <div
-         className={`react-ios-time-picker-hour ${
-            use12Hours && 'react-ios-time-picker-hour-12hour-format'
+         className={`ios-timepicker-react-hour ${
+            use12Hours && 'ios-timepicker-react-hour-12hour-format'
          }`}
          onMouseDown={handleMouseDown}
          onMouseUp={handleMouseUp}
@@ -217,8 +217,8 @@ function HourWheel({ height, value, setValue, use12Hours }) {
          {/* <PickerEffects height={height} /> */}
          <div
             ref={mainListRef}
-            className={`${isFastCondition === true && 'react-ios-time-picker-fast'} ${
-               isSlowCondition === true && 'react-ios-time-picker-slow'
+            className={`${isFastCondition === true && 'ios-timepicker-react-fast'} ${
+               isSlowCondition === true && 'ios-timepicker-react-slow'
             }`}
             onTransitionEnd={handleTransitionEnd}
             style={{ transform: `translateY(${currentTranslatedValue}px)` }}
@@ -226,13 +226,13 @@ function HourWheel({ height, value, setValue, use12Hours }) {
             {hours.map((hourObj, index) => (
                <div
                   key={index}
-                  className="react-ios-time-picker-cell-hour"
+                  className="ios-timepicker-react-cell-hour"
                   style={{ height: `${height}px` }}
                >
                   <div
-                     className={`react-ios-time-picker-cell-inner-hour${
-                        hourObj.selected ? ' react-ios-time-picker-cell-inner-selected' : ''
-                     }${hourObj?.hidden ? ' react-ios-time-picker-cell-inner-hidden' : ''}`}
+                     className={`ios-timepicker-react-cell-inner-hour${
+                        hourObj.selected ? ' ios-timepicker-react-cell-inner-selected' : ''
+                     }${hourObj?.hidden ? ' ios-timepicker-react-cell-inner-hidden' : ''}`}
                      onClick={handleClickToSelect}
                      data-translated-value={hourObj.translatedValue}
                   >

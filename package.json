@@ -1,6 +1,6 @@
 {
-   "name": "react-ios-time-picker",
-   "version": "0.2.2",
+   "name": "ios-timepicker-react",
+   "version": "0.2.7",
    "description": "A modern time picker for your React app.",
    "main": "dist/TimePicker.js",
    "module": "dist/TimePicker.js",
@@ -8,7 +8,7 @@
    "license": "MIT",
    "repository": {
       "type": "git",
-      "url": "https://github.com/MEddarhri/react-ios-time-picker"
+      "url": "git+github.com:esamani77/react-ios-time-picker.git"
    },
    "files": [
       "dist",
@@ -19,8 +19,16 @@
    },
    "scripts": {
       "build": "webpack --mode production",
+      "dev": "webpack --mode development --watch",
+      "clean": "rm -rf dist",
+      "prepare": "npm run build",
       "eslint": "eslint src --ext .js,.jsx",
-      "eslint:fix": "npm run eslint -- --fix"
+      "eslint:fix": "npm run eslint -- --fix",
+      "format": "prettier --write \"src/**/*.{js,jsx}\"",
+      "test": "echo \"No tests specified\" && exit 0",
+      "start-example": "cd example && npm start",
+      "install-example": "cd example && npm install",
+      "link-local": "npm link && cd example && npm link ios-timepicker-react"
    },
    "peerDependencies": {
       "react": "^18.2.0",
@@ -76,8 +84,12 @@
       "wheel picker",
       "select time"
    ],
-   "author": {
-      "name": "MEddarhri",
-      "email": "mokhtareddarhri@gmail.com"
-   }
+   "author": "MEddarhri <mokhtareddarhri@gmail.com>",
+   "directories": {
+      "example": "example"
+   },
+   "bugs": {
+      "url": "https://github.com/MEddarhri/ios-timepicker-react/issues"
+   },
+   "homepage": "https://github.com/MEddarhri/ios-timepicker-react#readme"
 }

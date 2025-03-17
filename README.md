@@ -1,18 +1,21 @@
-[![npm](https://img.shields.io/npm/v/react-ios-time-picker)](https://www.npmjs.com/package/react-ios-time-picker) ![downloads](https://img.shields.io/npm/dt/react-ios-time-picker?color=blue&logo=npm&logoColor=blue)
+[![npm](https://img.shields.io/npm/v/ios-timepicker-react)](https://www.npmjs.com/package/ios-timepicker-react) ![downloads](https://img.shields.io/npm/dt/ios-timepicker-react?color=blue&logo=npm&logoColor=blue)
 
 # React ios time picker
 
-![React-ios-time-picker demo](https://res.cloudinary.com/emdpro/image/upload/v1661245249/demo_bcmzme.gif)
+![ios-timepicker-react demo](https://res.cloudinary.com/emdpro/image/upload/v1661245249/demo_bcmzme.gif)
+
+> This package is a fork of [react-ios-time-picker](https://github.com/MEddarhri/react-ios-time-picker) with added TypeScript support and removal of forced CSS styles.
 
 A modern time picker for your next React app.
 
 -  No moment.js needed
 -  Zero dependencies and lightweight
+-  TypeScript support
 
 ## install
 
 ```
-npm install react-ios-time-picker
+npm install ios-timepicker-react
 ```
 
 ## Usage
@@ -23,7 +26,7 @@ npm install react-ios-time-picker
 
 ```js
 import React, { useState } from 'react';
-import { TimePicker } from 'react-ios-time-picker';
+import { TimePicker } from 'ios-timepicker-react';
 
 export default const  MyApp = () => {
    const [value, setValue] = useState('10:00');
@@ -46,7 +49,7 @@ export default const  MyApp = () => {
 
 ```js
 import React, { useState } from 'react';
-import { TimePicker } from 'react-ios-time-picker';
+import { TimePicker } from 'ios-timepicker-react';
 
 export default const  MyApp = () => {
    const [value, setValue] = useState('10:00 AM');
@@ -92,8 +95,8 @@ export default const  MyApp = () => {
 ## Contributions Welcome!
 
 ```shell
-git clone https://github.com/MEddarhri/react-ios-time-picker
-cd react-ios-time-picker
+git clone https://github.com/MEddarhri/ios-timepicker-react
+cd ios-timepicker-react
 ```
 
 ## License
