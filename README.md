@@ -95,7 +95,7 @@ export default const  MyApp = () => {
 ## Contributions Welcome!
 
 ```shell
-git clone https://github.com/MEddarhri/ios-timepicker-react
+git clone https://github.com/esamani77/react-ios-time-picker
 cd ios-timepicker-react
 ```
 
